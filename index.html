@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>im.ai - Hello World</title>
+    
+    <link rel="icon" type="image/avif" href="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAACZbWV0YQAAAAAAAAAhZWR0cwAAAAAAAAAsZWxtfAAAAAAAAAABAAAAAgAAAAAAbWRpYfAAAAA4aGRscgAAAAAAAAAAZGF0YQAAAAAAAAAAAAAAAABUaGlzIGlzIGEgZHVtbXkgSERMUgAAADhtZGhkAAAAAAAAAAAAAAAAAAAAMGAAAAAAMYAAAABbWV4aAAAAAxlcHN5AAAAAAAAACZpcGljAHwAAAAsaXBybAAAAClpbmZlAAAAAAABAAAAAmlkYXQAAAAAaWlyZgAAAAAAbG9jYfAAAAA4aWxvYwAAAABpZGF0AAAAAmhkcmwAAAAIaWRhdAAAAA== (YOUR_BASE64_AVIF_STRING_HERE) ...">
+
+    <style>
+        /* 2. Basic CSS Reset and Layout */
+        :root {
+            /* Light theme variables (default) */
+            --bg-color: #ffffff;
+            --text-color: #333333;
+            --container-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Dark theme variables (sensitive to OS/Browser setting) */
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #1a1a1a;
+                --text-color: #f0f0f0;
+                --container-shadow: 0 4px 15px rgba(255,255,255,0.05);
+            }
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .container {
+            text-align: center;
+            padding: 40px;
+            border-radius: 20px;
+            background-color: var(--bg-color); /* Matches body */
+            box-shadow: var(--container-shadow);
+        }
+
+        /* 3. Logo Styling */
+        .logo {
+            max-width: 150px;
+            height: auto;
+            border-radius: 30px; /* Matches the original app icon shape */
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-top: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="data:image/avif;base64,AAAAIGZ0eXBhdmlmAAAAAGF2aWZtaWYxbWlhZk1BMUIAAACZbWV0YQAAAAAAAAAhZWR0cwAAAAAAAAAsZWxtfAAAAAAAAAABAAAAAgAAAAAAbWRpYfAAAAA4aGRscgAAAAAAAAAAZGF0YQAAAAAAAAAAAAAAAABUaGlzIGlzIGEgZHVtbXkgSERMUgAAADhtZGhkAAAAAAAAAAAAAAAAAAAAMGAAAAAAMYAAAABbWV4aAAAAAxlcHN5AAAAAAAAACZpcGljAHwAAAAsaXBybAAAAClpbmZlAAAAAAABAAAAAmlkYXQAAAAAaWlyZgAAAAAAbG9jYfAAAAA4aWxvYwAAAABpZGF0AAAAAmhkcmwAAAAIaWRhdAAAAA== (YOUR_BASE64_AVIF_STRING_HERE) ..." alt="im.ai Logo" class="logo">
+        
+        <h1>Hello World</h1>
+    </div>
+</body>
+</html>
