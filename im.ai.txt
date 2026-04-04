@@ -1,0 +1,58 @@
+https://leok7v.github.io/im.ai.github.io
+
+https://gyptix.github.io/
+
+https://im-ai.local-llama.workers.dev/
+
+
+Run powerful AI models locally for complete privacy, or connect to leading cloud providers. You decide — every conversation, every time.
+
+Everything you need from AI
+A thoughtfully designed assistant for privacy-conscious users and AI enthusiasts alike.
+
+Local Models — Privacy First
+Run AI models directly on your device using llama.cpp. All conversations stay completely offline.
+
+Llama, Gemma, Qwen, Falcon & more
+No internet required
+Automatic download with progress tracking
+
+Cloud Providers
+Connect to leading AI providers using your own API keys — no middlemen, no markups.
+
+Google Gemini, Groq, OpenRouter
+Cerebras, GitHub Models
+Switch providers on the fly
+
+
+Beautiful Chat UI
+Gorgeous markdown rendering with code syntax highlighting, session history, and instant model switching.
+
+Full markdown & code blocks
+Session management & search
+Conversation context display
+
+
+Optimized Performance
+Low memory footprint and hardware-accelerated inference. Lightning-fast whether local or cloud.
+
+
+Customizable Experience
+Adjust text size and appearance. Securely store API keys. Organise conversations your way.
+
+
+Completely Free
+Free to download, no in-app purchases, no subscriptions. No data collection, no telemetry, no account required.
+
+
+We don't collect any personal data
+im.ai never tracks your conversations, usage, or personal information. Local model conversations never leave your device. For cloud providers, data travels directly between you and the provider — we are never in the loop.
+
+Free. No subscriptions. No tracking. Complete privacy. Your AI, your rules.
+
+https://departures.to/apps/20491
+https://leok7v.github.io/im.ai.github.io/
+https://testflight.apple.com/join/F7rQgTXv
+
+
+
