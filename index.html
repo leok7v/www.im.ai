@@ -379,13 +379,40 @@
 
         /* PRIVACY */
         .privacy { background: var(--bg); text-align: center; }
-        .privacy-inner { max-width: 640px; margin: 0 auto; }
+        .privacy-inner { max-width: 680px; margin: 0 auto; }
         .privacy h2 {
             font-size: clamp(24px, 4vw, 40px);
             font-weight: 700;
             letter-spacing: -0.8px;
-            margin-bottom: 16px;
+            margin-bottom: 32px;
         }
+        .privacy-topics {
+            display: flex;
+            gap: 24px;
+            text-align: left;
+        }
+        .privacy-topic {
+            flex: 1;
+            background: var(--bg2);
+            border-radius: var(--radius);
+            padding: 24px;
+            box-shadow: var(--shadow2);
+        }
+        .privacy-topic h3 {
+            font-size: 15px;
+            font-weight: 700;
+            letter-spacing: 0.04em;
+            text-transform: uppercase;
+            color: var(--accent);
+            margin-bottom: 10px;
+        }
+        .privacy-topic p {
+            font-size: 15px;
+            color: var(--text2);
+            line-height: 1.6;
+            margin: 0;
+        }
+        @media (max-width: 560px) { .privacy-topics { flex-direction: column; } }
         .privacy p {
             font-size: 17px;
             color: var(--text2);
@@ -599,9 +626,17 @@
 
 <section class="privacy">
     <div class="privacy-inner">
-        <h2>No servers. No middleman. No exceptions.</h2>
-        <p>Run a local model and nothing leaves your device.</p>
-        <p>Bring your own API key and im.ai connects directly to Google, Groq, OpenRouter, Cerebras, or GitHub Models. No relay, no middleman. Your requests go straight from your device to the provider, exactly as if you called their API yourself.</p>
+        <h2>Privacy and Security</h2>
+        <div class="privacy-topics">
+            <div class="privacy-topic">
+                <h3>Local</h3>
+                <p>Models run entirely on your device via llama.cpp. No network connection is made. Nothing leaves your iPhone or Mac.</p>
+            </div>
+            <div class="privacy-topic">
+                <h3>Remote</h3>
+                <p>Bring your own API key. im.ai connects directly from your device to Google, Groq, OpenRouter, Cerebras, or GitHub Models. No relay, no proxy, no im.ai servers in the path.</p>
+            </div>
+        </div>
     </div>
 </section>
 
