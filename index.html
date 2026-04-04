@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="im.ai — Run powerful AI models locally or connect to cloud providers. Free, private, no tracking.">
+    <meta name="description" content="im.ai — Run powerful AI models locally or connect to cloud providers. Private, powerful AI for iOS and macOS.">
     <title>im.ai</title>
     <script>
         (function(){
@@ -192,7 +192,12 @@
 
 
         /* SHOWCASE SLIDESHOW */
-        .showcase { background: var(--bg2); }
+        .showcase { background: #080c18; }
+        .showcase .section-head h2 { color: #f5f5f7; }
+        .showcase .section-head p  { color: rgba(245,245,247,0.6); }
+        .showcase-feat h3 { color: #f5f5f7; }
+        .showcase-feat p  { color: rgba(245,245,247,0.65); }
+        .ss-dot { background: rgba(255,255,255,0.2); }
         .showcase-layout {
             display: flex;
             gap: 64px;
@@ -385,22 +390,6 @@
             line-height: 1.6;
             margin-bottom: 14px;
         }
-        .privacy-badges {
-            display: flex;
-            gap: 12px;
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 32px;
-        }
-        .badge {
-            background: var(--bg2);
-            border: 1px solid var(--border);
-            border-radius: 980px;
-            padding: 7px 16px;
-            font-size: 13px;
-            font-weight: 500;
-            color: var(--text2);
-        }
 
         /* FOOTER */
         footer {
@@ -477,8 +466,8 @@
 <section class="features">
     <div class="section-inner">
         <div class="section-head">
-            <h2>Everything you need from AI</h2>
-            <p>A thoughtfully designed assistant for privacy-conscious users and AI enthusiasts alike.</p>
+            <h2>One app for every model</h2>
+            <p>Local models when you want privacy. Cloud providers when you need power. Switch freely — no lock-in, no re-login.</p>
         </div>
         <div class="features-grid">
 
@@ -486,7 +475,7 @@
                 <div class="feature-icon">&#127968;</div>
                 <div class="feat-tag">Local Models</div>
                 <h3>Privacy First</h3>
-                <p>Run AI models directly on your device using llama.cpp. All conversations stay completely offline.</p>
+                <p>Llama, Gemma, Qwen and more run directly on your device via llama.cpp. Nothing leaves your iPhone or Mac.</p>
                 <ul>
                     <li>Llama, Gemma, Qwen, Falcon &amp; more</li>
                     <li>No internet required</li>
@@ -498,7 +487,7 @@
                 <div class="feature-icon">&#9729;</div>
                 <div class="feat-tag">Cloud Providers</div>
                 <h3>Connect Your Way</h3>
-                <p>Use your own API keys with leading providers — no middlemen, no markups, no account required on our end.</p>
+                <p>Your own API keys, direct connections to Google, Groq, OpenRouter, Cerebras, GitHub Models and more. No middlemen.</p>
                 <ul>
                     <li>Google Gemini, Groq, OpenRouter</li>
                     <li>Cerebras, GitHub Models</li>
@@ -510,7 +499,7 @@
                 <div class="feature-icon">&#128172;</div>
                 <div class="feat-tag">Chat UI</div>
                 <h3>Conversations that Flow</h3>
-                <p>Gorgeous markdown rendering with code syntax highlighting, session history, and instant model switching.</p>
+                <p>Native markdown with syntax-highlighted code blocks, full session history, and instant model switching mid-conversation.</p>
                 <ul>
                     <li>Full markdown &amp; code blocks</li>
                     <li>Session management &amp; search</li>
@@ -522,21 +511,21 @@
                 <div class="feature-icon">&#9889;</div>
                 <div class="feat-tag">Performance</div>
                 <h3>Built for Speed</h3>
-                <p>Low memory footprint and hardware-accelerated inference. Lightning-fast whether local or cloud.</p>
+                <p>Hardware-accelerated inference, low memory footprint. Snappy whether you're running on-device or hitting a cloud API.</p>
             </div>
 
             <div class="feature-card">
                 <div class="feature-icon">&#127775;</div>
                 <div class="feat-tag">Customizable</div>
                 <h3>Made for You</h3>
-                <p>Adjust text size and appearance. Securely store API keys. Organise conversations your way.</p>
+                <p>Text size, reasoning effort, markdown rendering, spell check — every detail configurable. API keys stay in the system Keychain.</p>
             </div>
 
             <div class="feature-card">
-                <div class="feature-icon">&#127381;</div>
-                <div class="feat-tag">Free Forever</div>
-                <h3>No Strings Attached</h3>
-                <p>Free to download. No in-app purchases. No subscriptions. No data collection. No telemetry. No account required.</p>
+                <div class="feature-icon">&#129504;</div>
+                <div class="feat-tag">Reasoning</div>
+                <h3>Think Before Answering</h3>
+                <p>Enable reasoning mode on compatible models for step-by-step thinking on harder problems. Works locally and with cloud providers that support it.</p>
             </div>
 
         </div>
@@ -566,7 +555,7 @@
     <div class="section-inner">
         <div class="section-head">
             <h2>See it in action</h2>
-            <p>One app. Everything you need.</p>
+            
         </div>
         <div class="showcase-layout">
             <div class="showcase-slides">
@@ -609,15 +598,9 @@
 
 <section class="privacy">
     <div class="privacy-inner">
-        <h2>We don't collect any personal data</h2>
-        <p>im.ai never tracks your conversations, usage, or personal information. Local model conversations never leave your device.</p>
-        <p>For cloud providers, data travels directly between you and the provider — we are never in the loop.</p>
-        <div class="privacy-badges">
-            <span class="badge">No tracking</span>
-            <span class="badge">No telemetry</span>
-            <span class="badge">No account required</span>
-            <span class="badge">Local = fully offline</span>
-        </div>
+        <h2>Your data never touches our servers</h2>
+        <p>Run a local model and nothing leaves your device — ever.</p>
+        <p>Use a cloud provider and your messages travel directly to them over your own API key. im.ai is not in the middle, and there are no im.ai servers to be in the middle with.</p>
     </div>
 </section>
 
@@ -630,7 +613,7 @@
         <a href="https://github.com/leok7v/im.ai/issues">Issues</a>
         <a href="https://github.com/leok7v/im.ai/discussions">Discussions</a>
     </div>
-    <p>&copy; 2025&ndash;2026 im.ai &mdash; Free. No subscriptions. No tracking.</p>
+    <p>&copy; 2025&ndash;2026 im.ai</p>
 </footer>
 
 <script>
