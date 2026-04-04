@@ -95,16 +95,11 @@
             flex-shrink: 0;
         }
         #theme-toggle:hover { background: var(--bg); }
-        .theme-icon {
-            width: 18px;
-            height: 18px;
-            background-color: var(--text);
-            mask-image: url('data:image/svg+xml;utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 15 15'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M7.5 13.5C10.9518 13.5 13.5 10.9518 13.5 7.5C13.5 4.04822 10.9518 1.5 7.5 1.5C4.04822 1.5 1.5 4.04822 1.5 7.5C1.5 10.9518 4.04822 13.5 7.5 13.5ZM7.5 12.5V2.5C10.2614 2.5 12.5 4.73858 12.5 7.5C12.5 10.2614 10.2614 12.5 7.5 12.5Z'/%3E%3C/svg%3E');
-            mask-size: cover;
-            mask-repeat: no-repeat;
-            mask-position: center;
-            display: block;
-            transition: background-color 0.15s;
+        #theme-toggle .glyph {
+            font-size: 18px;
+            line-height: 1;
+            color: var(--text);
+            font-style: normal;
         }
         .btn {
             display: inline-flex;
@@ -345,7 +340,7 @@
         <span>im.ai</span>
     </a>
     <button id="theme-toggle" title="Switch theme">
-        <span class="theme-icon"></span>
+        <i class="glyph">&#x25D1;</i>
     </button>
     <a class="btn btn-primary" href="https://testflight.apple.com/join/F7rQgTXv">Download Free</a>
 </nav>
@@ -485,6 +480,7 @@
     function updateToggle() {
         var btn = document.getElementById('theme-toggle');
         btn.title = 'Switch to ' + (isDark() ? 'light' : 'dark') + ' mode';
+        btn.querySelector('.glyph').textContent = isDark() ? '\u25D0' : '\u25D1';
     }
 
     document.getElementById('theme-toggle').addEventListener('click', function() {
