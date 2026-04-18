@@ -14,6 +14,102 @@
     <meta name="twitter:card" content="summary">
     <meta name="twitter:title" content="Support — im.ai">
     <meta name="twitter:description" content="im.ai support: FAQ, getting started, and contact information.">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "What are the system requirements?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "macOS 15.7 or later, or iOS 18.6 or later. Apple Silicon Macs perform best for local models. Intel Macs can run local inference but more slowly."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What local models are available?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Which models appear in the picker depends on your device RAM — im.ai only shows models that fit. Each model is offered in Q4 and/or Q8 quantization; Q4 uses less memory, Q8 is higher quality."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How much storage do models use?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Small models (under 1B) use a few hundred MB. Mid-size models (7-8B Q4) use around 4-5 GB. Larger models (14B+) can need 8 GB or more. Swipe left on any downloaded model in the model picker to delete it and reclaim space."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I return to a previous conversation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Tap the sidebar icon in the top-left corner. Your chats are listed there, grouped by Today, Last Week, and Last Month. Tap any entry to reopen it."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I delete a downloaded model?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the model picker, find the downloaded model, and swipe left on it to reveal the Delete button."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "How do I delete an old conversation?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Open the sidebar, swipe left on a chat to delete it. To clear all conversations at once, tap the recycle icon next to the Chats heading."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Can I use it offline?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. Local models work fully offline. Cloud providers require an internet connection."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Where is my conversation history stored?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Entirely on your device. Nothing is sent to any im.ai server."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "Is it really free?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Yes. No in-app purchases, no subscriptions, no premium tier. Cloud providers may have their own pricing for API usage above free tiers."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "My API key is showing as invalid. What do I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Double-check that you've copied the key correctly with no leading or trailing spaces. Confirm the key is active in your provider's dashboard. Re-enter it in the model picker settings."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "The app crashed or a model won't load. What should I do?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Try a Q4 variant instead of Q8, or pick a smaller model. Close other apps to free RAM. If the issue persists, open a GitHub issue with your device model and iOS/macOS version."
+          }
+        }
+      ]
+    }
+    </script>
     <title>Support - im.ai</title>
     <script>
         (function(){
